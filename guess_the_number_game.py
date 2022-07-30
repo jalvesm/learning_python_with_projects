@@ -20,6 +20,7 @@ while (round <= total_of_attempts):
 
     if (guess_was_equal):
         print("YEAH, congrats! Right on the spot!\n")
+        break
     else:
         if (guess_was_smaller):
             print("Ohhh, not this time. Your guess was smaller than the actual number!")
