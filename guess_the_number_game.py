@@ -1,21 +1,31 @@
-print("***********************************************")
-welcome_message = "Hey there, welcome to this guessing game!"
-print(welcome_message)
-print("***********************************************")
 
-nickname = input("Inform your nickname, please, so we can get to know each other: ")
-print("Nice to meet you,", nickname, "!\nI'm Jo, the person who developed this small game :)")
-print("Let's get started!")
 
-secret_number = 42
+print("**********************************")
+print("\tTHE GUESSING GAME")
+print("**********************************")
 
-user_guessed_str = input("\nOkay, type a number: ")
-print("You've typed ", user_guessed_str)
-user_guessed = int(user_guessed_str)
+number = 42     #Answer to the Ultimate Question of Life :)
+total_of_attempts = 3
+round = 1       #starts at round 1
+user_guess = 0
 
-if (secret_number == user_guessed):
-    print("YEA, you're the best!")
-else:
-    print("Wow, looks like we still don't have a Sherlock over here ...")
+while (round <= total_of_attempts):
+    print("\n\nAttempt {} out of {}".format(round, total_of_attempts))
+    user_guess_str = input("Inform your guess: ")
+    user_guess = int(user_guess_str)
 
-print("Thank you for making part of it! This is the end of the game :)")
+    guess_was_smaller = number > user_guess
+    guess_was_equal = number == user_guess
+    guess_was_bigger = number < user_guess
+
+    if (guess_was_equal):
+        print("YEAH, congrats! Right on the spot!\n")
+    else:
+        if (guess_was_smaller):
+            print("Ohhh, not this time. Your guess was smaller than the actual number!")
+        elif (guess_was_bigger):
+            print("Ohhh, not this time. Your guess was bigger than the actual number!")
+    
+    round = round + 1
+
+print("End of game!")
