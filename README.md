@@ -3,7 +3,7 @@
 Hey there! :)
 In this repository you are able to follow the projects that I've been building while I learn Python.
 
-## My last goals where: :heavy_check_mark:	
+## :heavy_check_mark: My last goals where 	
 1. Installing python 3
     - Checked by the terminal if Python 3 was already installed;	
     - Installed VSCode (*v. 1.69.2*)
@@ -34,10 +34,10 @@ In this repository you are able to follow the projects that I've been building w
     - How to import `random` module;
     - Usage of `random.randrange()`;
     
-## Current steps :chart_with_upwards_trend:
+## :chart_with_upwards_trend: Current steps 
 [x] Setting intervals to generate random numbers;
 
-## Next steps :next_track_button:
+## :next_track_button: Next steps
 1. Level & game score
     - Adding levels to the game;
     - Setting a score to the user;
