@@ -1,27 +1,23 @@
-# write an algorithm to read two values from keyboard and tell if the first value is even and positive, and the second value is odd and negative
+# write an algorithm to read a value from keyboard and tell if it's positive or negative, and if it's even or odd
 
-def check_remainder(value):
-    even = (value % 2) == 0
-    
-    if (even):
-        print("The number {} is even.".format(value))
-    else:
-        print("The number {} is odd.".format(value))
+def checking_remainder(value):
+    true = (value % 2) == 0
+    return true
 
-def check_signal(value):
-    positive = value > 0
-    
-    if (positive):
-        print("The number {} is positive.".format(value))
-    else:
-        print("The number {} is negative.".format(value))
+def checking_signal(value):
+    true = value > 0
+    return true
 
+number = int(input("Type a number to test if it is even or odd, positive or negative: "))
 
-first_value = int(input("Insert the first value: "))
-second_value = int(input("Insert the second value: "))
+even = checking_remainder(number)
+if (even):
+    print("the number {} is even".format(number))
+else:
+    print("the number {} is odd.".format(number))
 
-check_remainder(first_value)
-check_signal(first_value)
-print()
-check_remainder(second_value)
-check_signal(second_value)
+positive = checking_signal(number)
+if (positive):
+    print("The number {} is positive.".format(number))
+else:
+    print("The number {} is negative.".format(number))
