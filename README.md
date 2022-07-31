@@ -15,20 +15,20 @@ In this repository you are able to follow the projects that I've been building w
    - Knowing the types of variables that Python works with;
    - Comparing variables;
    
-3. The *print()* function & good habits for a cleaner code
+3. The `print()` function & good habits for a cleaner code
     - Practicing the snake_case style;
     - Interpolation;
     - Python's 3 indentation;
     - Using parenthesis;
     
 4. The STATEMENTS in Python 
-    - If... elif... else;
+    - `If`... `elif`... `else`;
 
 5. Loops
-    - While;
-    - For;
-    - Break;
-    - Continue;
+    - `While`;
+    - `For`;
+    - `Break`;
+    - `Continue`;
 
 6. Working with random numbers
     - How to import `random` module;
