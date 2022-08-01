@@ -21,3 +21,8 @@ if (positive):
     print("The number {} is positive.".format(number))
 else:
     print("The number {} is negative.".format(number))
+
+    
+
+# i choose SUCH terrible names for these functions and variables! 
+# gotta change them all this week, sorry for that :/
