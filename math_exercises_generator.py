@@ -38,28 +38,50 @@ def generates_division_exercise():
     # print("Aswer: {:.2f}".format(quotient))
     print("{} / {}".format(numerator, denominator))
     print("\n\n")
+
+def showing_addition():
+    print("\n1)ADDITION:")
+    num_of_exercises = int(input("How many exercises do you need to practice? "))
+    for addition_exercises in range(1, num_of_exercises + 1):
+        generates_addition_exercise()
     
+def showing_subtraction():
+    print("\n2). SUBTRACTION:")
+    num_of_exercises = int(input("How many exercises do you need to practice? "))
+    for subtraction_exercises in range(1, num_of_exercises + 1):
+        generates_subtraction_exercise()
+    
+def showing_multiplication():
+    print("\n3) MULTIPLICATION:")
+    num_of_exercises = int(input("How many exercises do you need to practice? "))
+    for addition_exercises in range(1, num_of_exercises + 1):
+        generates_multiplication_exercise()
+    
+def showing_division():
+    print("\n4) DIVISION:")
+    num_of_exercises = int(input("How many exercises do you need to practice? "))
+    for subtraction_exercises in range(1, num_of_exercises + 1):
+        generates_division_exercise()    
 
 print("----------------------------------")
 print("MATHEMATICS EXERCISES GENERATOR")
-print("----------------------------------")
+print("----------------------------------\n\n")
 
-print("A)ADDITION:")
-print("1. Solve the addition exercises bellow:\n")
-for addition_exercises in range(1, 10):
-    generates_addition_exercise()
+print("Which arithmetic operation do you wish to practice?")
+print("(1) Addition")
+print("(2) Subtraction")
+print("(3) Multiplication")
+print("(4) Division")
+choice = int(input("Your choice: "))
+
+if (choice == 1):
+    showing_addition()
+elif (choice == 2):
+    showing_subtraction()
+elif (choice == 3):
+    showing_multiplication()
+else:
+    showing_division()
+
     
-print("B). SUBTRACTION:")
-print("1. Solve the subtraction exercises bellow:\n")
-for subtraction_exercises in range(1, 10):
-    generates_subtraction_exercise()
-    
-print("C) MULTIPLICATION:")
-print("1. Solve the multiplication exercises bellow:\n")
-for addition_exercises in range(1, 10):
-    generates_multiplication_exercise()
-    
-print("C) DIVISION:")
-print("1. Solve the division exercises bellow:\n")
-for subtraction_exercises in range(1, 10):
-    generates_division_exercise()
+    # ...to be improved!
